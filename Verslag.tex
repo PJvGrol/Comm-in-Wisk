@@ -1,0 +1,32 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Het getal $\pi$}
+\author{
+	Lars Folkersma\\
+	5543800\\
+	\and
+	Paul van Grol \\
+	5528909
+	\and
+	Artuur Oerlemans \\
+	.......}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Bewijs}
+\subsection{Argumenten van complexe getallen}
+Het argument van een complex getal $ x+yi $ wordt gegeven door $ arctan(y/x) $ en het argument van een complex getal $ x-yi $ wordt gegeven door $ -arctan(y/x) $, onder de voorwaarde dat $ x>0 $.
+Verder geldt dat als we complexe getallen vermenigvuldigen, dat het argument van het resultaat gelijk is aan de som van de argumenten.
+\subsection{Voorbeeld}
+We kunnen nu dus de getallen $ 2+i $ en $ 3+i $ nemen, die als argument respectievelijk $ arctan(1/2) $ en $ arctan(1/3) $ hebben. Het product van de twee getallen is gelijk aan $ 5 + 5i $, waarvan het argument dus gelijk is aan $ arctan(5/5) = arctan(1) = \pi / 4 $. Dit argument is tegelijk ook gelijk aan de som van de argumenten, ofwel $ \pi / 4 = arctan(1/2)+arctan(1/3) $
+\subsection{Formule van Machin}
+Om de formule van Machin te bewijzen, maken we gebruik van het volgende:
+$ (1+i) (5-i)^4 (239+i) = 228488 $. Als we hier de argumenten van nemen, dan zien we het volgende: $ arctan(1) - 4 arctan(1/5) + arctan(1/239) = 0 $, ofwel $ \pi/4 = 4 arctan(1/5) - arctan(1/239) $; de formule van Machin.
+\end{document}
